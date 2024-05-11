@@ -1,22 +1,26 @@
-<?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/layouts/header.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . '/GTK_db.php');
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Grand Theft Korovan</title>
+        <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+        <link type="image/png" rel="icon" href="/pics/GTK.png">
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <main>
+        <table>
+            <caption> Лучшие набигатели 2022 </caption>
+                <thead>
+                    <tr><th>Место</th><th>Грабитель</th><th>Золото</th><th>Дата набигания</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>Dennis</td><td>Web accessibility</td><td>45</td></tr>
+                  <tr><td>2</td><td>Sarah</td><td>JavaScript frameworks</td><td>29</td></tr>
+                  <tr><td>3</td><td>Karen</td><td>Web performance</td><td>36</td></tr>
+                </tbody>
+        </table>
+    </main>
+    </body>
+</html>    
 
-$db_connect = new GTKdb();
-
-$table = '<table><tr id="tablehead"><td>Место</td><td>Грабитель</td><td>Золото</td><td>Дата набигания</td></tr>';
-$counter = 0;
-foreach ($db_connect->selectAll("leaderboard") as $mi) {
-    $counter++;
-    $table .= '<tr><td>' . $counter . '</td>';
-    foreach($mi as $my)
-    {
-        $table .= '<td>' . $my .'</td>';
-    }
-    $table .= '</tr>';
-}
-$table .= '</table>';
-echo $table;
-
-
-require_once($_SERVER['DOCUMENT_ROOT'] . '/layouts/footer.php');
+<script type='text/javascript' src="/js/loader.js"></script>
