@@ -8,12 +8,20 @@ html {
     background-image: url(../pics/6870.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 0px;
     font-family: Сomic Sans MS, cursive;
     font-weight: bold;
     font-size: medium;
@@ -73,6 +81,10 @@ td{
 tr#tablehead{
     font-family: GTAru, cursive;
     font-size: 50px;
+}
+
+div#navbox{
+    width: 100px;
 }
 
 div#name{
@@ -155,9 +167,11 @@ button#start{
 
 p#about{
     position: absolute;
-    left: 10%;
-    width: 80%;
+    left: 20%;
+    width: 60%;
     margin-top: 50px;
+    text-align: justify;
+
 }
 
 p#gamehead{
@@ -180,10 +194,6 @@ img{
     margin-top: 30px;
     border: outset 5px black;
 }
-
-
-
-
 
 
 

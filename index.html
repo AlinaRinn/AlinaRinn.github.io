@@ -1,11 +1,23 @@
-<object type="text/html" data="/layouts/header.html"></object>
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Grand Theft Korovan</title>
+        <link href="/css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+        <link type="image/png" rel="icon" href="/pics/GTK.png">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!--<object type="text/html" width=100% height=157px data="/layouts/header.html"></object>-->
+        
+        <main>
+            <audio id='audio1' src='/res/gta_sound.wav'></audio>
+            <script type='text/javascript'> function playing() { document.getElementById('audio1').play(); } </script>
+            <a href="/korovan.html"><button id="start" name="start" onMouseOver="playing()">Грабить Корованы</button></a>
+        </main>
 
-    <audio id='audio1' src='/res/gta_sound.wav'></audio>
-    <script type='text/javascript'>
-        function playing() {
-        document.getElementById('audio1').play();
-        }
-    </script>
-    <a href="/korovan.html"><button id="start" name="start" onMouseOver="playing()">Грабить Корованы</button></a>
-    
-<object type="text/html" data="/layouts/footer.html"></object>
+        <!--<object type="text/html" width=100% height=100px data="/layouts/footer.html"></object>-->
+    </body>
+</html>    
+
+<script type='text/javascript' src="/js/loader.js"></script>
