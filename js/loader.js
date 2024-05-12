@@ -6,14 +6,14 @@ function setHeader() {
   </a>
 </div>
 <nav>
-  <a href="/index.html">Главная</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/leaderboard.html">Лидеры набигания</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/about.html">О Корованах</a>
+  <a href="/index.html">Главная</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/leaderboard.html">Лидеры набигания</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/about.html">О Корованах</a>
 </nav>`;
   document.body.insertAdjacentElement('afterbegin', header);
 }
 
 function setFooter() {
     var footer = document.createElement("footer");
-    footer.innerHTML = `<p> Grand Theft Korovan 2022&nbsp;&nbsp; &copy; &nbsp;&nbsp;All rights stealed </p>`;
+    footer.innerHTML = `<p id="footer"> Grand Theft Korovan 2022&nbsp;&nbsp; &copy; &nbsp;&nbsp;All rights stealed </p>`;
     document.body.insertAdjacentElement('beforeend', footer);
 }
 

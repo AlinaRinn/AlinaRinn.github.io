@@ -5,17 +5,64 @@
 }
 
 html {
-    background-image: url(../pics/6870.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0px;
-    margin: 0px;
 }
 
 body {
-    line-height: 1;
     margin: 0;
-    padding: 0;
+}
+
+header{
+    display: block;
+    height: auto;
+    border-style: solid;
+    border-width: 1px
+ }
+
+ main{
+    display: block;
+    min-height: 100vh;
+    text-align: center;
+    font-family: Comic Sans MS, cursive;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    background-image: url(../pics/6870.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    display: block;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: GTAru, cursive;
+    font-weight: lighter;
+    font-size: xx-large;
+    height: 60px;
+    padding-top: 20px;
+}
+
+div#about{
+    display: block;
+    padding: 200px;
+    background-image: url('/pics/zapiska.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p#about{
+    text-align: justify;
+    font-size: x-large;
+    text-shadow: 2px 0 2px black,
+    0 2px 2px black,
+    -2px 0 2px black,
+    0 -2px 2px black;
+}
+
+p{
+    margin: 0;
 }
 
 a {
@@ -31,45 +78,13 @@ a:hover {
     color: #FE5200;
 }
 
-header{
-     height: auto;
- }
-
-footer{
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    font-family: GTAru, cursive;
-    font-weight: lighter;
-    font-size: xx-large;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-}
-
 nav{
     text-align: center;
+    height: 37px;
+    max-height: 37px;
     background-color: black;
     color: white;
-    padding: 20px;
-}
-
-main{
-    text-align: center;
-    font-family: Comic Sans MS, cursive;
-    font-weight: normal;
-    font-size: 20px;
-    color: white;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    min-height: 800px;
-    height: 100%;
+    padding-top: 13px;
 }
 
 form{
@@ -78,13 +93,13 @@ form{
 
 table{
     margin: 0 auto;
-    margin-top: 10px;
     width: auto;
     border: outset 5px black;
     height: 100px;
 }
 
 caption{
+    margin-top: 50px;
     text-decoration: none;
     padding: 10px;
     font-weight: normal;
@@ -131,8 +146,7 @@ div#navbox{
 
 div#name{
     width: auto;
-    height: auto;
-    padding: 0;
+    height: 90px;
     background: black;
 }
 
@@ -140,7 +154,7 @@ div#nametxt{
     text-align: center;
     color: black;
     align-self: center;
-    height: auto;
+    height: 80px;
     font-family: GTAru, cursive;
     font-size: 100px;
     text-shadow: 4px 0 4px white,
@@ -205,28 +219,6 @@ button:hover {
 button#start{
     margin-top: 100px;
     font-size: 100px;
-}
-
-div#about{
-    position: absolute;
-    left: 20%;
-    width: 60%;
-    height: auto;
-    background-image: url('/pics/zapiska.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-p#about{
-    margin-top: 150px;
-    margin-left: 150px;
-    margin-right: 125px;
-    text-align: justify;
-    font-size: x-large;
-    text-shadow: 2px 0 2px black,
-    0 2px 2px black,
-    -2px 0 2px black,
-    0 -2px 2px black;
 }
 
 p#gamehead{
