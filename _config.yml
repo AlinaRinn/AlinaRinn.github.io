@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "ru-RU"
-title                    : "Никита Лущик"
+title                    : "Главная"
 title_separator          : "-"
 name                     : &name "Никита Лущик"
 description              : &description "personal description"
@@ -27,8 +27,8 @@ author:
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
   employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  uri              : "natsuru.ru"
+  email            : "nik17042001@rambler.ru" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
