@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    animation: slideInLeft 1s ease-out;
+}
+
+.avatar {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    background-image: url('images/22.png'); /* Замените на путь к вашему изображению */
+    background-size: cover;
+    border: 5px solid white;
+	animation: scaleUp 1s infinite alternate;
+}
+
+.avatar img {
+
+
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    animation: slideInRight 1s ease-out;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
