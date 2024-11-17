@@ -29,6 +29,7 @@ header h1 {
 .sidebar {
     width: 30%;
     padding: 20px;
+	padding-top: 60px;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
     animation: slideInLeft 1s ease-out;
@@ -39,15 +40,10 @@ header h1 {
     height: 300px;
     border-radius: 50%;
     margin: 0 auto 15px;
-    background-image: url('images/22.png'); /* Замените на путь к вашему изображению */
+    background-image: url('images/22.png');
     background-size: cover;
     border: 5px solid white;
 	animation: scaleUp 1s infinite alternate;
-}
-
-.avatar img {
-
-
 }
 
 .main-content {
@@ -63,14 +59,15 @@ footer {
     background: rgba(255, 255, 255, 0.2);
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
-@keyframes scaleUp {
-    from { transform: scale(1); }
-    to { transform: scale(1.1); }
 
 @keyframes slideInLeft {
     from { transform: translateX(-100%); }
@@ -81,3 +78,7 @@ footer {
     from { transform: translateX(100%); }
     to { transform: translateX(0); }
 }
+
+@keyframes scaleUp {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
