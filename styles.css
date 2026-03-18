@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Gabriela";
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     display: flex;
@@ -17,7 +17,23 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3rem;
+	font-family: "Montserrat";
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+li {
+    margin-left: 20px;
+	margin-bottom: 5px;
+	font-size: 1.2rem;
 }
 
 .content {
@@ -28,6 +44,7 @@ header h1 {
 
 .sidebar {
     width: 30%;
+	min-width: 300px;
     padding: 20px;
 	padding-top: 60px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -82,3 +99,17 @@ a {
 @keyframes scaleUp {
     from { transform: scale(1); }
     to { transform: scale(1.1); }
+	
+@font-face {
+  font-family: "Gabriela";
+  src: url("/fonts/Gabriela/Gabriela-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
