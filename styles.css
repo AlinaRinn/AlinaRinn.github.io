@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Gabriela";
+  src: url("/fonts/Gabriela/Gabriela-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
     margin: 0;
     font-family: "Gabriela";
@@ -99,17 +113,4 @@ a {
 @keyframes scaleUp {
     from { transform: scale(1); }
     to { transform: scale(1.1); }
-	
-@font-face {
-  font-family: "Gabriela";
-  src: url("/fonts/Gabriela/Gabriela-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
 }
